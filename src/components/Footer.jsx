@@ -1,7 +1,13 @@
-export default function Footer() {
+import { useTranslation } from 'react-i18next';
+
+
+export default function Footer({ viewCount }) {
+    const { t } = useTranslation();
+  
   return (
+    
     <footer className="text-center py-8 text-gray-600 text-sm">
-      <p>© 2025 Huỳnh Hữu Phước. All rights reserved.</p>
+      <p>{t('footer.credit')} - Views: {viewCount}</p>
     </footer>
   );
 }

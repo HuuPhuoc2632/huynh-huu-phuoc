@@ -1,0 +1,192 @@
+{
+  "header": {
+        "greeting":"It's nice to meet you, I'm",
+    "name": "HUYNH HUU PHUOC",
+    "role": "Flutter Developer | 2 Years Experience",
+    "intro": "I'm a Flutter developer who loves how technology can turn small ideas into real products that people actually use.\nOver the past 2 years, I've built multiple mobile applications with smooth performance, clean UI, and a user experience that makes people want to keep using the app.\nI'm always eager to learn new things, refine every line of code, and ready to take on exciting challenges ahead.",
+    "location": "Go Vap, Ho Chi Minh City",
+    "career_goal": "🎯 CAREER OBJECTIVE",
+    "career_short": "Short-term goal",
+    "career_long": "Long-term goal",
+    "short_term": "I focus on enhancing my expertise in Flutter and Dart through real-world mobile projects. My short-term goal is to strengthen skills in state management, API integration, and app performance optimization. I also aim to learn from experienced engineers and contribute effectively to the success of the team.",
+    "long_term": "I aspire to develop my career into a Project Manager in mobile application development. I aim not only to excel technically but also to master project management processes, team collaboration, and strategic decision-making. My goal is to lead impactful tech projects that deliver real value to users and contribute to business growth.",
+    "stats": {
+    "years_dev": "4+ Years of Development",
+    "years_work": "2 Years of Experience",
+    "projects": "8+ Completed Projects"
+  }
+  },
+  "experience": {
+    "title": "WORK EXPERIENCE",
+    "items": [
+      {
+        "title": "ITBee Solutions (Mobile Developer)",
+        "period": "02/2024 - Present",
+        "desc": "Build and develop cross-platform mobile applications using Flutter, publishing apps on Google Play Store and App Store. Ensure product stability, performance optimization, and full compliance with business technical requirements.",
+        "tech": "Flutter, GetX, Sqflite, Google API, Firebase, SQL Server"
+      },
+      {
+        "title": "Freelance",
+        "period": "2023 - 2024",
+        "desc": "During my time as a university student, I took on several small freelance projects to gain hands-on experience and improve my skills. I developed web interfaces using ReactJS, built simple React Native apps, integrated APIs, and created basic backends with NodeJS. These projects helped me understand how to work with clients, plan features, and deliver complete products.",
+        "tech": "ReactJS, React Native, NodeJS, Firebase, MySQL, MongoDB"
+      }
+    ]
+  },
+  "skills": {
+    "title": "SKILLS",
+    "items": [
+      {
+        "name": "Flutter",
+        "icon": "../icons/flutter.png"
+      },
+      {
+        "name": "React Native",
+        "icon": "../icons/react-native.png"
+      },
+      {
+        "name": "Android (Java/Kotlin)",
+        "icon": "../icons/android_ic.png"
+      },
+      {
+        "name": "ReactJs",
+        "icon": "../icons/react-native.png"
+      },
+      {
+        "name": "NodeJs",
+        "icon": "../icons/nodejs_ic.png"
+      },
+      {
+        "name": "Spring Boot",
+        "icon": "../icons/spring-boot.png"
+      },
+      {
+        "name": "SQL Server",
+        "icon": "../icons/sql-server.png"
+      },
+      {
+        "name": "Postgres",
+        "icon": "../icons/postgres_ic.png"
+      },
+      {
+        "name": "MongoDB",
+        "icon": "../icons/mgdb_ic.png"
+      },
+      {
+        "name": "Postman",
+        "icon": "../icons/pm_ic.png"
+      },
+      {
+        "name": "Jira",
+        "icon": "../icons/jira.png"
+      },
+      {
+        "name": "Git",
+        "icon": "../icons/ic_git.png"
+      }
+    ],
+     "header_item": [
+      { "name": "Flutter", "icon": "../icons/flutter.png" },
+      { "name": "React Native", "icon": "../icons/react-native.png" },
+      { "name": "Android (Java/Kotlin)", "icon": "../icons/android_ic.png" },
+      { "name": "NodeJs", "icon": "../icons/node_hd.png" },
+      { "name": "Spring Boot", "icon": "../icons/spring-boot.png" }
+    ],
+    "labels": {
+      "languages": "Languages",
+      "frameworks": "Frameworks",
+      "tools": "Tools",
+      "soft_skills": "Soft Skills"
+    },
+    "details": {
+      "languages": "Dart, Javascript, Java, Kotlin",
+      "frameworks": "Flutter, React Native, ReactJs, NodeJs, Spring Boot",
+      "tools": "VS Code, Android Studio, Xcode, Git, Postman, Jira, Figma",
+      "soft_skills": "Teamwork, Problem Solving, Time Management"
+    }
+  },
+  "projects": {
+    "title": "FEATURED PROJECTS",
+    "tech_label": "Tech Stack",
+    "items": [
+      {
+        "name": "Beverage Ordering App",
+        "desc": "A mobile app that allows users to order drinks online in two modes: individual and group orders. Users can select items, share group codes for friends to join, and pay directly in-app. I handled the entire process from design, backend, frontend to live deployment.",
+        "tech": "Flutter, GetX, Dio, Firebase Cloud Messaging, NestJS, VNPay",
+        "images": [
+          "../icons/fnb.jpg",
+          "/projects/coffee_1.png"
+        ]
+      },
+      {
+        "name": "Sales Force Automation",
+        "desc": "Developed and maintained a mobile app supporting sales teams in daily operations: order creation, customer check-ins, inventory tracking, and route planning. Real-time data sync with backend for performance reporting and analytics.",
+        "tech": "Flutter, Dart, GetX, Dio, SQLite, Google Maps Flutter, Unit Testing",
+        "images": [
+          "../icons/sfa.jpg",
+          "/projects/sfa_1.png"
+        ]
+      },
+      {
+        "name": "Affiliate E-Commerce App",
+        "desc": "A cross-platform shopping app enabling users to browse and purchase milk products via affiliate links. Features include login, product catalog, cart, secure payment, and order tracking.",
+        "tech": "Flutter, Dart, BLoC, Dio, Shared Preferences, Secure Storage, VNPay, Firebase Cloud Messaging",
+        "images": [
+          "../icons/aff.jpg",
+          "/projects/affiliate_1.png"
+        ]
+      },
+      {
+        "name": "Loan Profile Management App",
+        "desc": "A loan profile management app allowing customers to view loan details and staff to update statuses in real time. Supports offline storage and WebSocket sync for data consistency and security.",
+        "tech": "Flutter, Dart, Provider, Dio, Hive, SQLite, WebSocket",
+        "images": [
+          "../icons/loan.jpg",
+          "/projects/loan_1.png"
+        ]
+      }
+    ]
+  },
+  "education": {
+    "title": "🎓 EDUCATION",
+    "university": {
+      "name": "Ho Chi Minh City University of Industry (IUH)",
+      "period": "2020 - 2024",
+      "major": "Software Engineering",
+      "gpa": "3.06",
+      "logo": "/icons/iuh.png"
+    },
+    "labels": {
+      "major": "Major",
+      "gpa": "GPA"
+    },
+    "certificates": {
+      "diploma": {
+        "title": "Bachelor's Degree",
+        "image": "/icons/bang-dai-hoc.png"
+      },
+      "toeic": {
+        "title": "TOEIC Certificate",
+        "image": "/icons/toeic.jpg"
+      }
+    }
+  },
+  "clients": {
+    "title": "CLIENTS",
+    "description": "Some of the leading brands I have worked with on projects or provided technical support",
+    "items": [
+     { "name": "Bel Viet Name", "logo": "/icons/belvn.png" },
+      { "name": "Lof", "logo": "/icons/lof.png" },
+      { "name": "Orion", "logo": "/icons/orion.png" },
+      { "name": "Sabeco", "logo": "/icons/sabeco.png" },
+      { "name": "Duy Tan plastics", "logo": "/icons/duytan.png" },
+      { "name": "Lotte Viet Nam", "logo": "/icons/lotte.png" },
+      { "name": "Newbev", "logo": "/icons/newbev.png" },
+      { "name": "Gas South", "logo": "/icons/gas.png" },
+      { "name": "Lazu Viet Nam", "logo": "/icons/lazu.png" }
+    ]
+  },
+  "footer": {
+    "credit": "© 2025 Huynh Huu Phuoc."
+  }
+}

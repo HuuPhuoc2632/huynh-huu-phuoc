@@ -1,17 +1,16 @@
+// Experience.jsx
+import { useTranslation } from 'react-i18next';
+
 export default function Experience() {
-  const experiences = [
-    {
-      title: "ITBee Solutions (Mobile Developer)",
-      period: "02/2024 - nay",
-      desc: "Xây dựng và phát triển các ứng dụng di động đa nền tảng bằng Flutter, phát hành ứng dụng lên Google Play Store và App Store. Đảm bảo sản phẩm hoạt động ổn định, tối ưu hiệu năng và đáp ứng yêu cầu kỹ thuật của doanh nghiệp.",
-      tech: "Flutter, GetX, Sqflite, Google API, Firebase, SQL Server",
-    },
-  ];
+  const { t } = useTranslation();
+
+  // Lấy dữ liệu, không cần type
+  const experiences = t('experience.items', { returnObjects: true });
 
   return (
-    <section className="mb-12">
+    <section className="mb-12" id="experience">
       <h2 className="text-2xl font-bold text-blue-400 mb-6 flex items-center gap-2">
-        📋 KINH NGHIỆM LÀM VIỆC
+        {t('experience.title')}
       </h2>
 
       <div className="space-y-6">
@@ -33,7 +32,9 @@ export default function Experience() {
 
                 {exp.tech && (
                   <p className="text-xs text-slate-300 mt-3 font-mono">
-                    <strong className="text-cyan-400">Công nghệ:</strong>{" "}
+                    <strong className="text-cyan-400">
+                      {t('experience.tech_label', { defaultValue: 'Công nghệ:' })}
+                    </strong>{' '}
                     {exp.tech}
                   </p>
                 )}
