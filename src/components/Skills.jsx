@@ -7,55 +7,54 @@ export default function Skills() {
   const skills = t('skills.items', { returnObjects: true });
 
   return (
-    <section className="mb-12">
-      <h2 className="text-2xl font-bold text-blue-400 mb-6 flex items-center gap-2">
-        {t('skills.title')}
-      </h2>
+    <section id="skills" className="w-full py-20 bg-black/30 backdrop-blur-lg text-center">
+      <div className="max-w-6xl mx-auto px-6">
+        <h2
+          className="text-3xl md:text-3xl font-bold text-blue-400 mb-10 flex items-center justify-center gap-2"
+          data-aos="fade-down"
+        >
+          {t('skills.title')}
+        </h2>
 
-      <div className="bg-[#1e293b]/70 backdrop-blur-lg border border-slate-700 rounded-2xl shadow-lg p-6">
-        {/* Grid kỹ năng */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {skills.map((skill, i) => (
-            <div
-              key={i}
-              className="flex flex-col items-center justify-between 
-             bg-white border border-slate-300 rounded-xl p-3 
-             hover:shadow-[0_0_15px_rgba(59,130,246,0.3)] hover:-translate-y-1 
-             transition-all duration-300 h-24"
-            >
-              {/* Icon */}
-              <img
-                src={skill.icon}
-                alt={skill.name}
-                className="w-10 h-10 object-contain"
-              />
+        <div
+          className="backdrop-blur-xl p-8 bg-gray-800/60 border border-gray-700 rounded-2xl py-6 text-center shadow-lg"
+          data-aos="fade-up"
+        >
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {skills.map((skill, i) => (
+              <div
+                key={i}
+                className="flex flex-col items-center justify-center 
+                bg-white border border-slate-700 rounded-xl p-4 
+                hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] hover:-translate-y-1 
+                transition-all duration-300 h-28"
+              >
+                <img src={skill.icon} alt={skill.name} className="w-10 h-10 object-contain" />
+                <span className="mt-2 text-sm font-medium text-gray-800  tracking-wide">
+                  {skill.name}
+                </span>
+              </div>
+            ))}
+          </div>
 
-              {/* Tên kỹ năng luôn sát đáy */}
-              <span className="mt-auto text-xs font-semibold text-gray-800 text-center tracking-wide">
-                {skill.name}
-              </span>
-            </div>
-          ))}
-        </div>
-
-        {/* Phần mô tả thêm bên dưới */}
-        <div className="mt-6 text-sm text-slate-300 leading-relaxed space-y-2">
-          <p>
-            <strong className="text-cyan-400">{t('skills.labels.languages')}:</strong>{' '}
-            {t('skills.details.languages')}
-          </p>
-          <p>
-            <strong className="text-cyan-400">{t('skills.labels.frameworks')}:</strong>{' '}
-            {t('skills.details.frameworks')}
-          </p>
-          <p>
-            <strong className="text-cyan-400">{t('skills.labels.tools')}:</strong>{' '}
-            {t('skills.details.tools')}
-          </p>
-          <p>
-            <strong className="text-cyan-400">{t('skills.labels.soft_skills')}:</strong>{' '}
-            {t('skills.details.soft_skills')}
-          </p>
+          <div className="mt-8 text-sm text-slate-300 leading-relaxed space-y-2 text-left md:text-center">
+            <p>
+              <strong className="text-cyan-400">{t('skills.labels.languages')}:</strong>{' '}
+              {t('skills.details.languages')}
+            </p>
+            <p>
+              <strong className="text-cyan-400">{t('skills.labels.frameworks')}:</strong>{' '}
+              {t('skills.details.frameworks')}
+            </p>
+            <p>
+              <strong className="text-cyan-400">{t('skills.labels.tools')}:</strong>{' '}
+              {t('skills.details.tools')}
+            </p>
+            <p>
+              <strong className="text-cyan-400">{t('skills.labels.soft_skills')}:</strong>{' '}
+              {t('skills.details.soft_skills')}
+            </p>
+          </div>
         </div>
       </div>
     </section>

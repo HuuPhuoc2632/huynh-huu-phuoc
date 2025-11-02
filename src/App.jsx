@@ -47,25 +47,21 @@ function App() {
   const changeLang = (lang) => i18n.changeLanguage(lang);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-gray-100">
+    <div className="min-h-screen bg-gradient-to-br bg-black/30  from-gray-900 via-gray-800 to-gray-700 text-gray-100">
 
       <Header />
-      <About/>
+      <About />
 
-      <div className="max-w-6xl mx-auto p-4 md:p-8 space-y-12">
 
-        <div data-aos="fade-right"><Experience /></div>
-        <div data-aos="fade-up"><Skills /></div>
-        <div data-aos="zoom-in"><Projects /></div>
-        <div data-aos="fade-left"><Education /></div>
-        <div data-aos="fade-up"><Clients /></div>
+      <Experience />
+      <Skills />
+      <Projects />
+      <Education />
+      <Clients />
 
-        <div data-aos="fade-in">
-          <Footer viewCount={viewCount} />
-        </div>
-
-        <FloatingButtons />
-      </div>
+      <Footer viewCount={viewCount} />
+    
+      <FloatingButtons />
     </div>
   );
 }

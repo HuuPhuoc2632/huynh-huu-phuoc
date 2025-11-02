@@ -1,6 +1,6 @@
 {
   "header": {
-        "greeting":"It's nice to meet you, I'm",
+    "greeting": "It's nice to meet you, I'm",
     "name": "HUYNH HUU PHUOC",
     "role": "Flutter Developer | 2 Years Experience",
     "intro": "I'm a Flutter developer who loves how technology can turn small ideas into real products that people actually use.\nOver the past 2 years, I've built multiple mobile applications with smooth performance, clean UI, and a user experience that makes people want to keep using the app.\nI'm always eager to learn new things, refine every line of code, and ready to take on exciting challenges ahead.",
@@ -11,10 +11,10 @@
     "short_term": "I focus on enhancing my expertise in Flutter and Dart through real-world mobile projects. My short-term goal is to strengthen skills in state management, API integration, and app performance optimization. I also aim to learn from experienced engineers and contribute effectively to the success of the team.",
     "long_term": "I aspire to develop my career into a Project Manager in mobile application development. I aim not only to excel technically but also to master project management processes, team collaboration, and strategic decision-making. My goal is to lead impactful tech projects that deliver real value to users and contribute to business growth.",
     "stats": {
-    "years_dev": "4+ Years of Development",
-    "years_work": "2 Years of Experience",
-    "projects": "8+ Completed Projects"
-  }
+      "years_dev": "4+ Years of Development",
+      "years_work": "2 Years of Experience",
+      "projects": "8+ Completed Projects"
+    }
   },
   "experience": {
     "title": "WORK EXPERIENCE",
@@ -26,10 +26,22 @@
         "tech": "Flutter, GetX, Sqflite, Google API, Firebase, SQL Server"
       },
       {
+        "title": "DMSpro (Flutter Developer - Offshore/Onsite)",
+        "period": "03/2025 - Present",
+        "desc": "Contributed to the development of Flutter mobile applications at DMSpro. Worked directly with clients in an onsite/offshore model to analyze requirements, enhance user experience, and ensure project progress. Responsible for implementing business logic, integrating RESTful APIs, optimizing performance, and supporting bug fixing during UAT and production phases.",
+        "tech": "Flutter, GetX, Sqflite, RESTful API, Firebase, etc."
+      },
+      {
         "title": "Freelance",
         "period": "2023 - 2024",
         "desc": "During my time as a university student, I took on several small freelance projects to gain hands-on experience and improve my skills. I developed web interfaces using ReactJS, built simple React Native apps, integrated APIs, and created basic backends with NodeJS. These projects helped me understand how to work with clients, plan features, and deliver complete products.",
         "tech": "ReactJS, React Native, NodeJS, Firebase, MySQL, MongoDB"
+      },
+      {
+        "title": "Private Tutor – Programming & Probability Statistics",
+        "period": "2022 - 2023",
+        "desc": "Tutored university students in Basic Programming (C/Java) and Probability & Statistics. Helped learners strengthen foundational knowledge, guided them through assignments and mini-projects, and enhanced their problem-solving and logical thinking skills.",
+        "tech": "C, Java, Visual Studio Code, ..."
       }
     ]
   },
@@ -85,12 +97,27 @@
         "icon": "../icons/ic_git.png"
       }
     ],
-     "header_item": [
-      { "name": "Flutter", "icon": "../icons/flutter.png" },
-      { "name": "React Native", "icon": "../icons/react-native.png" },
-      { "name": "Android (Java/Kotlin)", "icon": "../icons/android_ic.png" },
-      { "name": "NodeJs", "icon": "../icons/node_hd.png" },
-      { "name": "Spring Boot", "icon": "../icons/spring-boot.png" }
+    "header_item": [
+      {
+        "name": "Flutter",
+        "icon": "../icons/flutter.png"
+      },
+      {
+        "name": "React Native",
+        "icon": "../icons/react-native.png"
+      },
+      {
+        "name": "Android (Java/Kotlin)",
+        "icon": "../icons/android_ic.png"
+      },
+      {
+        "name": "NodeJs",
+        "icon": "../icons/node_hd.png"
+      },
+      {
+        "name": "Spring Boot",
+        "icon": "../icons/spring-boot.png"
+      }
     ],
     "labels": {
       "languages": "Languages",
@@ -175,15 +202,46 @@
     "title": "CLIENTS",
     "description": "Some of the leading brands I have worked with on projects or provided technical support",
     "items": [
-     { "name": "Bel Viet Name", "logo": "/icons/belvn.png" },
-      { "name": "Lof", "logo": "/icons/lof.png" },
-      { "name": "Orion", "logo": "/icons/orion.png" },
-      { "name": "Sabeco", "logo": "/icons/sabeco.png" },
-      { "name": "Duy Tan plastics", "logo": "/icons/duytan.png" },
-      { "name": "Lotte Viet Nam", "logo": "/icons/lotte.png" },
-      { "name": "Newbev", "logo": "/icons/newbev.png" },
-      { "name": "Gas South", "logo": "/icons/gas.png" },
-      { "name": "Lazu Viet Nam", "logo": "/icons/lazu.png" }
+      {
+        "name": "Bel Viet Name",
+        "logo": "/icons/belvn.png"
+      },
+      {
+        "name": "Lof",
+        "logo": "/icons/lof.png"
+      },
+      {
+        "name": "Orion",
+        "logo": "/icons/orion.png"
+      },
+      {
+        "name": "Sabeco",
+        "logo": "/icons/sabeco.png"
+      },
+      {
+        "name": "Duy Tan plastics",
+        "logo": "/icons/duytan.png"
+      },
+      {
+        "name": "Lotte Viet Nam",
+        "logo": "/icons/lotte.png"
+      },
+      {
+        "name": "Newbev",
+        "logo": "/icons/newbev.png"
+      },
+      {
+        "name": "Gas South",
+        "logo": "/icons/gas.png"
+      },
+      {
+        "name": "Lazu Viet Nam",
+        "logo": "/icons/lazu.png"
+      },
+      {
+        "name": "Bee Coffee",
+        "logo": "/icons/beecf.png"
+      }
     ]
   },
   "footer": {
