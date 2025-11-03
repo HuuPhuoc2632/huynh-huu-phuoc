@@ -28,11 +28,11 @@ export default function Projects() {
     >
       <div className="max-w-6xl mx-auto px-6">
         <h2
-          className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-400 bg-clip-text text-transparent mb-16 flex items-center justify-center gap-3"
+          className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-400 bg-clip-text text-transparent mb-16 flex flex-col md:flex-row items-center justify-center gap-3 text-center md:text-left"
           data-aos="fade-down"
         >
           <span className="w-12 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full"></span>
-          {t("projects.title")}
+          <span className="whitespace-nowrap">{t("projects.title")}</span>
           <span className="w-12 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full"></span>
         </h2>
 
