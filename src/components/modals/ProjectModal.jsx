@@ -23,7 +23,7 @@ export default function ProjectModal({ project, currentImage, onClose, onPrev, o
         {/* Slider ảnh */}
         <div className="relative mb-4">
           <img
-            src={project.images[currentImage]}
+            src={project.images.slice(1)[currentImage]}
             alt={project.name}
             className="w-full h-72 object-contain rounded-lg border border-slate-700 shadow-inner bg-gray-900/40 p-2"
           />

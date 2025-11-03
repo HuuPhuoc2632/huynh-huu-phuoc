@@ -151,7 +151,7 @@
         "tech": "Flutter, Dart, GetX, Dio, SQLite, Google Maps Flutter, Unit Testing",
         "images": [
           "../icons/sfa.jpg",
-          "/projects/sfa_1.png"
+         "../icons/sfa01.png"
         ]
       },
       {
@@ -160,7 +160,7 @@
         "tech": "Flutter, Dart, BLoC, Dio, Shared Preferences, Secure Storage, VNPay, Firebase Cloud Messaging",
         "images": [
           "../icons/aff.jpg",
-          "/projects/affiliate_1.png"
+          "../icons/lazu01.png"
         ]
       },
       {
@@ -169,7 +169,7 @@
         "tech": "Flutter, Dart, Provider, Dio, Hive, SQLite, WebSocket",
         "images": [
           "../icons/loan.jpg",
-          "/projects/loan_1.png"
+          "../icons/ab01.png"
         ]
       }
     ]
