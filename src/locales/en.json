@@ -5,14 +5,14 @@
     "role": "Flutter Developer | 2 Years Experience",
     "intro": "I'm a Flutter developer who loves how technology can turn small ideas into real products that people actually use.\nOver the past 2 years, I've built multiple mobile applications with smooth performance, clean UI, and a user experience that makes people want to keep using the app.\nI'm always eager to learn new things, refine every line of code, and ready to take on exciting challenges ahead.",
     "location": "Go Vap, Ho Chi Minh City",
-    "career_goal": "🎯 CAREER OBJECTIVE",
+    "career_goal": "CAREER OBJECTIVE",
     "career_short": "Short-term goal",
     "career_long": "Long-term goal",
     "short_term": "I focus on enhancing my expertise in Flutter and Dart through real-world mobile projects. My short-term goal is to strengthen skills in state management, API integration, and app performance optimization. I also aim to learn from experienced engineers and contribute effectively to the success of the team.",
     "long_term": "I aspire to develop my career into a Project Manager in mobile application development. I aim not only to excel technically but also to master project management processes, team collaboration, and strategic decision-making. My goal is to lead impactful tech projects that deliver real value to users and contribute to business growth.",
     "stats": {
       "years_dev": "4+ Years of Development",
-      "years_work": "2 Years of Experience",
+      "years_work": "2+ Years of Experience",
       "projects": "8+ Completed Projects"
     }
   },
@@ -134,20 +134,36 @@
   },
   "projects": {
     "title": "FEATURED PROJECTS",
-    "tech_label": "Tech Stack",
+    "tech_label": "Technology",
     "items": [
       {
-        "name": "Beverage Ordering App",
-        "desc": "A mobile app that allows users to order drinks online in two modes: individual and group orders. Users can select items, share group codes for friends to join, and pay directly in-app. I handled the entire process from design, backend, frontend to live deployment.",
-        "tech": "Flutter, GetX, Dio, Firebase Cloud Messaging, NestJS, VNPay",
+        "name": "Drink Ordering App",
+        "desc": "A mobile application that allows users to order drinks online in two forms: individual orders and group orders.",
+        "detail": [
+          "Designed UI/UX and fully developed the app using Flutter.",
+          "Integrated payments, voucher application, and push notifications using Firebase Cloud Messaging.",
+          "Supported Group Order: create groups and share codes (deeplink) for multiple users to join and order together.",
+          "Handled individual and group shopping carts.",
+          "Processed image uploads to AWS S3 using Presigned URLs.",
+          "Deployed the app to production (including building and store release) and optimized performance."
+        ],
+        "tech": "Flutter, GetX, Firebase, NestJS, S3",
         "images": [
           "../icons/fnb.jpg",
-          "/projects/coffee_1.png"
+          "../icons/bf01.png",
+          "../icons/bf02.png",
+          "../icons/bf03.png"
         ]
       },
       {
         "name": "Sales Force Automation",
-        "desc": "Developed and maintained a mobile app supporting sales teams in daily operations: order creation, customer check-ins, inventory tracking, and route planning. Real-time data sync with backend for performance reporting and analytics.",
+        "desc": "An application that helps sales teams manage orders, customers, inventory, and daily routes.",
+        "detail": [
+          "Developed features such as order creation, attendance tracking, customer check-in, and inventory management.",
+          "Integrated Google Maps for location tracking, navigation, and route history.",
+          "Implemented offline storage using SQLite and data synchronization with backend when online.",
+          "Optimized performance and wrote Unit Tests for critical logic."
+        ],
         "tech": "Flutter, Dart, GetX, Dio, SQLite, Google Maps Flutter, Unit Testing",
         "images": [
           "../icons/sfa.jpg",
@@ -156,7 +172,14 @@
       },
       {
         "name": "Affiliate E-Commerce App",
-        "desc": "A cross-platform shopping app enabling users to browse and purchase milk products via affiliate links. Features include login, product catalog, cart, secure payment, and order tracking.",
+        "desc": "An e-commerce application that allows users to purchase dairy products through affiliate marketing links.",
+        "detail": [
+          "Developed features such as product categories, shopping cart, vouchers, order placement, logistics integration, and payment.",
+          "Integrated VNPay for secure online payments.",
+          "Used Firebase Cloud Messaging for order and promotion notifications.",
+          "Managed user sessions using Secure Storage and Shared Preferences.",
+          "Deployed the app to production (including building and store release) and optimized performance."
+        ],
         "tech": "Flutter, Dart, BLoC, Dio, Shared Preferences, Secure Storage, VNPay, Firebase Cloud Messaging",
         "images": [
           "../icons/aff.jpg",
@@ -165,17 +188,41 @@
       },
       {
         "name": "Loan Profile Management App",
-        "desc": "A loan profile management app allowing customers to view loan details and staff to update statuses in real time. Supports offline storage and WebSocket sync for data consistency and security.",
+        "desc": "An app for managing loan profiles for customers and bank staff in real time.",
+        "detail": [
+          "Customers can view loan details and repayment schedules.",
+          "Staff can update application status and track processing progress.",
+          "Stored data offline using Hive + SQLite and synchronized via WebSocket.",
+          "Ensured user data security and access control."
+        ],
         "tech": "Flutter, Dart, Provider, Dio, Hive, SQLite, WebSocket",
         "images": [
           "../icons/loan.jpg",
           "../icons/ab01.png"
         ]
+      },
+      {
+        "name": "Apartment Management System",
+        "desc": "(Graduation Project)A comprehensive apartment management application for residents and building administrators, supporting both web and mobile platforms.",
+        "detail": [
+          "Developed web management interface using ReactJS and backend with Node.js and MongoDB.",
+          "Built Flutter mobile app with Provider, synchronized with backend, and supported push notifications via Firebase.",
+          "Integrated VNPay for secure payment of electricity, water, and service bills.",
+          "Implemented AI chatbot to assist residents with inquiries and guidance, powered by ChatGPT API.",
+          "Managed residents, apartments, services, bills, and notifications in real time.",
+          "Ensured data security, user role-based access control (resident – administrator), and optimized app performance."
+        ],
+        "tech": "Flutter, Provider, Firebase, VNPay, ReactJS, Node.js, MongoDB, ChatGPT API",
+        "images": [
+          "../icons/ap01.jpg",
+          "../icons/ap02.png",
+          "../icons/ap03.png"
+        ]
       }
     ]
   },
   "education": {
-    "title": "🎓 EDUCATION",
+    "title": "EDUCATION",
     "university": {
       "name": "Ho Chi Minh City University of Industry (IUH)",
       "period": "2020 - 2024",

@@ -1,11 +1,10 @@
-// Education.jsx
-import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Education() {
   const { t } = useTranslation();
   const [modalOpen, setModalOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState('');
+  const [selectedImage, setSelectedImage] = useState("");
 
   const openModal = (img) => {
     setSelectedImage(img);
@@ -14,93 +13,104 @@ export default function Education() {
 
   const closeModal = () => {
     setModalOpen(false);
-    setSelectedImage('');
+    setSelectedImage("");
   };
 
   return (
     <section
       id="education"
-      className="w-full py-20 bg-black/30 backdrop-blur-lg text-center"
+      className="w-full py-24 bg-gradient-to-b from-black/40 via-slate-900/20 to-black/40 backdrop-blur-xl"
     >
-      <div className="max-w-6xl mx-auto px-6" >
-
-        {/* === TIÊU ĐỀ === */}
-        <h2 className="text-3xl md:text-4xl font-bold text-blue-400 mb-12">
-          {t('education.title')}
+      <div className="max-w-6xl mx-auto px-6">
+        <h2
+          className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-400 bg-clip-text text-transparent mb-16 flex items-center justify-center gap-3"
+          data-aos="fade-down"
+        >
+          <span className="w-12 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full"></span>
+          {t("education.title")}
+          <span className="w-12 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full"></span>
         </h2>
 
-        {/* === THÔNG TIN TRƯỜNG HỌC === */}
         <div
           data-aos="fade-up"
-          className="
-          bg-gray-800/60 backdrop-blur-xl border border-slate-700 
-                     rounded-2xl shadow-lg p-6 flex flex-col md:flex-row items-center gap-6 
-                     hover:shadow-[0_0_25px_rgba(59,130,246,0.4)] transition-all duration-300"
+          data-aos-delay="100"
+          className="group relative bg-gradient-to-br from-slate-800/70 via-slate-900/80 to-slate-800/70 backdrop-blur-md border border-slate-700/50 rounded-2xl p-6 shadow-xl hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-500 overflow-hidden flex flex-col md:flex-row items-center gap-8"
         >
-          <div className="min-w-[8rem] min-h-[8rem] flex items-center justify-center rounded-full 
-                          bg-white border-4 border-blue-500 shadow-lg p-3">
-            <img
-              src={t('education.university.logo')}
-              alt={t('education.university.name')}
-              className="w-28 h-28 object-contain"
-            />
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 to-cyan-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+          <div className="relative flex-shrink-0 w-36 h-36 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-full p-3 shadow-2xl shadow-blue-500/30 group-hover:scale-105 transition-transform duration-500">
+            <div className="w-full h-full bg-white/90 rounded-full p-3 shadow-inner flex items-center justify-center">
+              <img
+                src={t("education.university.logo")}
+                alt={t("education.university.name")}
+                className="w-full h-full object-contain rounded-full"
+              />
+            </div>
           </div>
 
-          <div className="text-slate-200 text-center md:text-left">
-            <h3 className="font-bold text-xl text-blue-300">
-              {t('education.university.name')}
+          <div className="relative text-center md:text-left space-y-3 flex-1">
+            <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-300">
+              {t("education.university.name")}
             </h3>
-            <p className="text-sm text-slate-400">{t('education.university.period')}</p>
-            <p className="mt-3 leading-relaxed text-slate-300">
-              <strong className="text-cyan-400">{t('education.labels.major')}:</strong> {t('education.university.major')} &nbsp;|&nbsp;
-              <strong className="text-cyan-400">{t('education.labels.gpa')}:</strong> {t('education.university.gpa')}
+            <p className="text-sm text-cyan-400 font-medium tracking-wide">
+              {t("education.university.period")}
+            </p>
+            <p className="text-slate-300 leading-relaxed">
+              <strong className="text-cyan-400">{t("education.labels.major")}:</strong>{" "}
+              {t("education.university.major")} |{" "}
+              <strong className="text-cyan-400">{t("education.labels.gpa")}:</strong>{" "}
+              {t("education.university.gpa")}
             </p>
           </div>
         </div>
 
-        {/* === CHỨNG CHỈ === */}
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
-          {['diploma', 'toeic'].map((type, index) => (
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+          {["diploma", "toeic"].map((type, index) => (
             <div
               key={index}
               data-aos="fade-up"
-              className="bg-gray-800/60 backdrop-blur-xl border border-slate-700 rounded-2xl p-4
-                         hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all"
+              data-aos-delay={200 + index * 100}
+              className="group relative bg-gradient-to-br from-slate-800/70 via-slate-900/80 to-slate-800/70 backdrop-blur-md border border-slate-700/50 rounded-2xl p-5 shadow-xl hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-500 overflow-hidden cursor-pointer"
+              onClick={() => openModal(t(`education.certificates.${type}.image`))}
             >
-              <p className="text-xs font-semibold text-cyan-400 mb-3">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 to-cyan-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+              <p className="relative z-10 text-sm font-semibold text-cyan-400 uppercase tracking-wider mb-4">
                 {t(`education.certificates.${type}.title`)}
               </p>
-              <img
-                src={t(`education.certificates.${type}.image`)}
-                alt={t(`education.certificates.${type}.title`)}
-                className="w-full rounded-lg cursor-pointer border border-slate-700 
-                           hover:shadow-[0_0_25px_rgba(59,130,246,0.4)] transition"
-                onClick={() => openModal(t(`education.certificates.${type}.image`))}
-              />
+
+              <div className="relative rounded-xl overflow-hidden border border-slate-700/70 shadow-inner">
+                <img
+                  src={t(`education.certificates.${type}.image`)}
+                  alt={t(`education.certificates.${type}.title`)}
+                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
             </div>
           ))}
         </div>
       </div>
 
-      {/* === MODAL PHÓNG TO ẢNH === */}
       {modalOpen && (
         <div
-          className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50 p-4"
+          className="fixed inset-0 bg-black/80 backdrop-blur-lg flex items-center justify-center z-50 p-4 animate-fadeIn"
           onClick={closeModal}
         >
-          <div className="relative max-w-4xl w-full">
+          <div
+            className="relative max-w-4xl w-full bg-gradient-to-br from-slate-900/90 to-slate-800/90 backdrop-blur-xl rounded-2xl p-4 shadow-2xl border border-slate-700/70 animate-scaleIn"
+            onClick={(e) => e.stopPropagation()}
+          >
             <button
               onClick={closeModal}
-              className="absolute top-2 right-2 bg-slate-800 hover:bg-blue-500 text-white
-                         rounded-full w-8 h-8 flex items-center justify-center shadow-lg transition"
+              className="absolute top-4 right-4 bg-slate-800/80 hover:bg-red-600/80 text-slate-300 hover:text-white rounded-full p-2.5 backdrop-blur-sm transition-all duration-200 shadow-lg hover:shadow-red-500/30 z-10"
             >
-              ✕
+              X
             </button>
             <img
               src={selectedImage}
-              alt="Zoom"
-              className="w-full rounded-lg border border-slate-700 shadow-[0_0_25px_rgba(59,130,246,0.4)]"
-              onClick={(e) => e.stopPropagation()}
+              alt="Certificate"
+              className="w-full rounded-xl border border-slate-700/70 shadow-2xl"
             />
           </div>
         </div>

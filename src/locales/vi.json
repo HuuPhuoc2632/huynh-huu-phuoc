@@ -5,14 +5,14 @@
     "role": "Flutter Developer | 2 năm kinh nghiệm",
     "location": "Gò Vấp, Thành phố Hồ Chí Minh",
     "intro": "Mình là một lập trình viên Flutter, yêu thích cách công nghệ có thể biến những ý tưởng nhỏ thành sản phẩm mà người khác thật sự sử dụng.\nHơn 2 năm qua, mình đã xây dựng nhiều ứng dụng di động với trải nghiệm mượt mà, hiệu năng tốt và giao diện \"nhìn là muốn dùng\".\nMình luôn tìm cách học hỏi điều mới, tối ưu từng dòng code và sẵn sàng chinh phục những thử thách thú vị phía trước.",
-    "career_goal": "🎯 MỤC TIÊU NGHỀ NGHIỆP",
+    "career_goal": "MỤC TIÊU NGHỀ NGHIỆP",
     "career_short": "Mục tiêu ngắn hạn",
     "short_term": "Mình tập trung nâng cao chuyên môn về Flutter và Dart thông qua việc tham gia các dự án di động thực tế. Mục tiêu trước mắt là củng cố kỹ năng về quản lý trạng thái, tích hợp API, và tối ưu hiệu năng ứng dụng. Mình cũng mong muốn được học hỏi kinh nghiệm từ các kỹ sư giỏi và đóng góp hiệu quả vào thành công chung của đội nhóm.",
     "career_long": "Mục tiêu dài hạn",
     "long_term": "Mình hướng đến việc phát triển sự nghiệp để trở thành một Project Manager trong lĩnh vực phát triển ứng dụng di động. Mình mong muốn không chỉ giỏi về kỹ thuật mà còn hiểu sâu về quy trình quản lý dự án, phối hợp đội nhóm, và ra quyết định chiến lược. Mục tiêu của mình là dẫn dắt các dự án công nghệ mang lại giá trị thực tế cho người dùng và góp phần thúc đẩy sự phát triển của doanh nghiệp.",
     "stats": {
       "years_dev": "4+ Năm Phát Triển",
-      "years_work": "2 Năm Làm Việc",
+      "years_work": "2+ Năm Làm Việc",
       "projects": "8+ Dự Án Đã Tham Gia"
     }
   },
@@ -137,26 +137,49 @@
     "tech_label": "Công nghệ",
     "items": [
       {
-        "name": "Ứng dụng đặt nước uống",
-        "desc": "Ứng dụng di động cho phép người dùng đặt nước uống trực tuyến theo hai hình thức: đơn cá nhân và đơn nhóm (group order). Người dùng có thể chọn món, chia sẻ mã nhóm để bạn bè cùng đặt, và thanh toán trực tiếp trên app. Dự án được mình thực hiện toàn bộ từ khâu thiết kế, xây dựng backend, frontend đến triển khai thực tế.",
-        "tech": "Flutter, GetX, Dio, Firebase Cloud Messaging, NestJS, VNPay",
+        "name": "Drink Ordering App",
+        "desc": "Ứng dụng di động cho phép người dùng đặt nước uống trực tuyến theo hai hình thức: đơn cá nhân và đơn nhóm.",
+        "detail": [
+          "Thiết kế UI/UX và phát triển toàn bộ ứng dụng trên Flutter.",
+          "Tích hợp thanh toán, áp dụng voucher và gửi thông báo đẩy bằng Firebase Cloud Messaging.",
+          "Hỗ trợ Group Order: tạo nhóm, chia sẻ mã (deeplink) cho nhiều người cùng đặt.",
+          "Xử lý giỏ hàng cá nhân, giỏ hàng nhóm",
+          "Xử lý upload ảnh lên S3 thông qua Presigned",
+          "Triển khai sản phẩm thực tế (bao gồm build và release store) và tối ưu hiệu năng ứng dụng."
+        ],
+        "tech": "Flutter, GetX, Firebase, NestJS, S3",
         "images": [
           "../icons/fnb.jpg",
-          "/projects/coffee_1.png"
+          "../icons/bf01.png",
+          "../icons/bf02.png",
+          "../icons/bf03.png"
         ]
       },
       {
         "name": "Sales Force Automation",
-        "desc": "Phát triển và duy trì ứng dụng di động hỗ trợ đội ngũ bán hàng trong việc quản lý hoạt động hằng ngày như tạo đơn hàng, điểm danh khách hàng, theo dõi tồn kho và lập kế hoạch tuyến đường. Ứng dụng được đồng bộ dữ liệu theo thời gian thực với hệ thống backend để báo cáo và phân tích hiệu suất.",
+        "desc": "Ứng dụng hỗ trợ đội ngũ bán hàng quản lý đơn hàng, khách hàng, tồn kho và tuyến đường làm việc.",
+        "detail": [
+          "Phát triển các tính năng: tạo đơn hàng, chấm công, check-in khách hàng, quản lý tồn kho.",
+          "Tích hợp Google Maps để định vị, chỉ đường và lưu lịch sử di chuyển.",
+          "Lưu trữ offline bằng SQLite và đồng bộ dữ liệu với backend khi có mạng.",
+          "Tối ưu hiệu suất và viết Unit Test cho các logic quan trọng."
+        ],
         "tech": "Flutter, Dart, GetX, Dio, SQLite, Google Maps Flutter, Unit Testing",
         "images": [
           "../icons/sfa.jpg",
-         "../icons/sfa01.png"
+          "../icons/sfa01.png"
         ]
       },
       {
         "name": "Affiliate E-Commerce App",
-        "desc": "Ứng dụng mua sắm đa nền tảng giúp người dùng duyệt và mua sản phẩm sữa thông qua liên kết tiếp thị liên kết (affiliate). Ứng dụng có các tính năng đăng nhập, danh mục sản phẩm, giỏ hàng, thanh toán an toàn và theo dõi đơn hàng.",
+        "desc": "Ứng dụng thương mại điện tử giúp người dùng mua sắm sản phẩm sữa qua liên kết tiếp thị liên kết (affiliate).",
+        "detail": [
+          "Xây dựng các tính năng: danh mục sản phẩm, giỏ hàng, voucher, đặt hàng, kết nối đơn vị vận chuyển, thanh toán.",
+          "Tích hợp VNPay để thanh toán trực tuyến an toàn.",
+          "Sử dụng Firebase Cloud Messaging để thông báo đơn hàng và khuyến mãi.",
+          "Quản lý phiên đăng nhập bằng Secure Storage và Shared Preferences.",
+          "Triển khai sản phẩm thực tế (bao gồm build và release store) và tối ưu hiệu năng ứng dụng."
+        ],
         "tech": "Flutter, Dart, BLoC, Dio, Shared Preferences, Secure Storage, VNPay, Firebase Cloud Messaging",
         "images": [
           "../icons/aff.jpg",
@@ -165,17 +188,41 @@
       },
       {
         "name": "Loan Profile Management App",
-        "desc": "Ứng dụng quản lý hồ sơ vay cho phép khách hàng xem thông tin khoản vay và nhân viên cập nhật trạng thái theo thời gian thực. Ứng dụng hỗ trợ lưu trữ ngoại tuyến và đồng bộ dữ liệu qua WebSocket, giúp đảm bảo tính nhất quán và bảo mật dữ liệu.",
+        "desc": "Ứng dụng quản lý hồ sơ vay vốn cho khách hàng và nhân viên ngân hàng theo thời gian thực.",
+        "detail": [
+          "Khách hàng có thể xem thông tin khoản vay, lịch trả nợ.",
+          "Nhân viên cập nhật trạng thái hồ sơ và theo dõi tiến độ xử lý.",
+          "Lưu trữ dữ liệu offline bằng Hive + SQLite, đồng bộ qua WebSocket.",
+          "Đảm bảo bảo mật dữ liệu người dùng và phân quyền truy cập người dùng."
+        ],
         "tech": "Flutter, Dart, Provider, Dio, Hive, SQLite, WebSocket",
         "images": [
           "../icons/loan.jpg",
           "../icons/ab01.png"
         ]
+      },
+      {
+        "name": "Apartment Management System",
+        "desc": "(Đồ án tốt nghiệp) Ứng dụng quản lý căn hộ trong tòa nhà chung cư, hỗ trợ cả web và mobile, dành cho cư dân và ban quản lý.",
+        "detail": [
+          "Xây dựng web quản lý bằng ReactJS và backend Node.js với MongoDB.",
+          "Phát triển app Flutter sử dụng Provider, đồng bộ dữ liệu với backend và hỗ trợ thông báo đẩy qua Firebase.",
+          "Tích hợp hệ thống thanh toán VNPay cho các hóa đơn điện, nước, phí dịch vụ.",
+          "Triển khai chatbot AI hỗ trợ cư dân trả lời câu hỏi và hướng dẫn sử dụng, dựa trên mô hình ChatGPT.",
+          "Quản lý cư dân, căn hộ, dịch vụ, hóa đơn và thông báo theo thời gian thực.",
+          "Đảm bảo bảo mật dữ liệu, phân quyền người dùng (cư dân – quản lý) và tối ưu hiệu suất ứng dụng."
+        ],
+        "tech": "Flutter, Provider, Firebase, VNPay, ReactJS, Node.js, MongoDB, ChatGPT API",
+        "images": [
+          "../icons/ap01.jpg",
+          "../icons/ap02.png",
+          "../icons/ap03.png"
+        ]
       }
     ]
   },
   "education": {
-    "title": "🎓TRÌNH ĐỘ HỌC VẤN",
+    "title": "TRÌNH ĐỘ HỌC VẤN",
     "university": {
       "name": "Đại học Công Nghiệp TP.HCM (IUH)",
       "period": "2020 - 2024",
