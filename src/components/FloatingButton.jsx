@@ -46,13 +46,13 @@ export default function FloatingButtons() {
           <img src="../icons/zalo.png" alt="Zalo" className="w-12 h-12 rounded-full object-cover" />
         </a>
 
-            <a
+            {/* <a
           href="https://github.com/HuuPhuoc2632"
           target="_blank"
           className="w-12 h-12 flex items-center justify-center bg-gray-800 hover:bg-black text-white rounded-full shadow-md transition"
         >
           <FaGithub size={48} />
-        </a>
+        </a> */}
       </div>
 
       {/* ✅ Scroll to Top */}
