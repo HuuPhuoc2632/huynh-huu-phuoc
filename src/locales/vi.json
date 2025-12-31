@@ -153,7 +153,9 @@
           "../icons/bf01.png",
           "../icons/bf02.png",
           "../icons/bf03.png"
-        ]
+        ],
+        "google_play": "https://play.google.com/store/apps/details?id=vn.itbeesolutions.beecoffee",
+        "apple_store": "https://apps.apple.com/vn/app/bee-coffee/id6742728320"
       },
       {
         "name": "Sales Force Automation",
@@ -168,7 +170,9 @@
         "images": [
           "../icons/sfa.jpg",
           "../icons/sfa01.png"
-        ]
+        ],
+        "google_play": "https://play.google.com/store/apps/details?id=vn.dmspro.oms.sfa",
+        "apple_store": "https://apps.apple.com/vn/app/dmspro-sfa/id1670542266"
       },
       {
         "name": "Affiliate E-Commerce App",
@@ -184,7 +188,9 @@
         "images": [
           "../icons/aff.jpg",
           "../icons/lazu01.png"
-        ]
+        ],
+        "google_play": "https://play.google.com/store/apps/details?id=itbee.itbeesolutions.lazu",
+        "apple_store": "https://apps.apple.com/vn/app/lazu/id6736358814"
       },
       {
         "name": "Loan Profile Management App",
@@ -199,7 +205,9 @@
         "images": [
           "../icons/loan.jpg",
           "../icons/ab01.png"
-        ]
+        ],
+        "google_play": "https://play.google.com/store/apps/details?id=allbanks.com.vn",
+        "apple_store": ""
       },
       {
         "name": "Apartment Management System",
@@ -217,7 +225,9 @@
           "../icons/ap01.jpg",
           "../icons/ap02.png",
           "../icons/ap03.png"
-        ]
+        ],
+        "google_play": "",
+        "apple_store": ""
       }
     ]
   },
