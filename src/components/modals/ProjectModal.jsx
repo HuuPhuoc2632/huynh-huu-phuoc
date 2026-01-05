@@ -76,7 +76,7 @@ export default function ProjectModal({ project, currentImage, onClose, onPrev, o
           {project.images.length > 1 && (
             <div className="flex gap-2 justify-center mt-4 flex-wrap">
               {project.images.map((media, idx) => {
-                const isThumbVideo = media.endsWith(".mp4") || media.endsWith(".webm") ||media.includes('drive.google.com');
+                const isThumbVideo = media.endsWith(".mp4") || media.endsWith(".webm") || media.includes('drive.google.com');
                 return (
                   <button
                     key={idx}
@@ -84,11 +84,10 @@ export default function ProjectModal({ project, currentImage, onClose, onPrev, o
                       e.stopPropagation();
                       setCurrentImage(idx);
                     }}
-                    className={`relative w-16 h-10 rounded-lg overflow-hidden border-2 transition-all group/thumb ${
-                      idx === currentImage
+                    className={`relative w-16 h-10 rounded-lg overflow-hidden border-2 transition-all group/thumb ${idx === currentImage
                         ? "border-cyan-400 shadow-lg shadow-cyan-400/30 scale-105"
                         : "border-slate-600 opacity-60 hover:opacity-100 hover:border-slate-400"
-                    }`}
+                      }`}
                   >
                     {isThumbVideo ? (
                       <>
@@ -117,6 +116,42 @@ export default function ProjectModal({ project, currentImage, onClose, onPrev, o
           <p className="text-slate-300 text-base leading-relaxed tracking-wide">
             {project.desc}
           </p>
+          {(project.google_play || project.apple_store) && (
+            <div className="flex gap-4 flex-wrap pt-2">
+              {project.google_play && (
+                <a
+                  href={project.google_play}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 bg-black text-white px-4 py-2 rounded-xl hover:scale-105 transition-all shadow-lg"
+                >
+                  <img
+                    src="/icons/ch-play.png"
+                    alt="Google Play"
+                    className="w-6 h-6"
+                  />
+                  <span className="text-sm font-semibold">Google Play</span>
+                </a>
+              )}
+
+              {project.apple_store && (
+                <a
+                  href={project.apple_store}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 bg-black text-white px-4 py-2 rounded-xl hover:scale-105 transition-all shadow-lg"
+                >
+                  <img
+                    src="/icons/app_store.png"
+                    alt="App Store"
+                    className="w-6 h-6"
+                  />
+                  <span className="text-sm font-semibold">App Store</span>
+                </a>
+              )}
+            </div>
+          )}
+
 
           <div className="flex items-center gap-2 flex-wrap">
             <span className="text-cyan-400 font-semibold text-sm">Tech:</span>

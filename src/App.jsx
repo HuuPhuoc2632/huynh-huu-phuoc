@@ -51,8 +51,6 @@ function App() {
 
       <Header />
       <About />
-
-
       <Experience />
       <Skills />
       <Projects />

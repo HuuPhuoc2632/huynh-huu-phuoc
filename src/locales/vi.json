@@ -27,7 +27,7 @@
       },
       {
         "title": "DMSpro (Flutter Developer - Offshore/Onsite)",
-        "period": "03/2025 - nay",
+        "period": "03/2025 - 10/2025",
         "desc": "Tham gia phát triển ứng dụng di động Flutter tại DMSpro. Làm việc trực tiếp onsite cùng khách hàng để phân tích yêu cầu, tối ưu trải nghiệm người dùng và đảm bảo tiến độ dự án. Thực hiện viết logic xử lý dữ liệu, tích hợp API, tối ưu hiệu năng và hỗ trợ fix bug trong các giai đoạn UAT/Production.",
         "tech": "Flutter, GetX, Sqflite, RESTful API, Firebase, GetX,..."
       },
@@ -141,6 +141,7 @@
         "desc": "Ứng dụng di động cho phép người dùng đặt nước uống trực tuyến theo hai hình thức: đơn cá nhân và đơn nhóm.",
         "detail": [
           "Thiết kế UI/UX và phát triển toàn bộ ứng dụng trên Flutter.",
+          "Giao diện được tối ưu để sử dụng mượt mà trên điện thoại và máy tính bảng, có hỗ trợ in hóa đơn và phát âm thanh khi thanh toán thành công.",
           "Tích hợp thanh toán, áp dụng voucher và gửi thông báo đẩy bằng Firebase Cloud Messaging.",
           "Hỗ trợ Group Order: tạo nhóm, chia sẻ mã (deeplink) cho nhiều người cùng đặt.",
           "Xử lý giỏ hàng cá nhân, giỏ hàng nhóm",

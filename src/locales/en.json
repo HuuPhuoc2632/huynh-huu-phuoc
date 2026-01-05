@@ -27,7 +27,7 @@
       },
       {
         "title": "DMSpro (Flutter Developer - Offshore/Onsite)",
-        "period": "03/2025 - Present",
+        "period": "03/2025 - 10/2025",
         "desc": "Contributed to the development of Flutter mobile applications at DMSpro. Worked directly with clients in an onsite/offshore model to analyze requirements, enhance user experience, and ensure project progress. Responsible for implementing business logic, integrating RESTful APIs, optimizing performance, and supporting bug fixing during UAT and production phases.",
         "tech": "Flutter, GetX, Sqflite, RESTful API, Firebase, etc."
       },
@@ -141,6 +141,7 @@
         "desc": "A mobile application that allows users to order drinks online in two forms: individual orders and group orders.",
         "detail": [
           "Designed UI/UX and fully developed the app using Flutter.",
+          "Optimized UI/UX for mobile phones and tablets; implemented receipt printing and payment audio notifications.",  
           "Integrated payments, voucher application, and push notifications using Firebase Cloud Messaging.",
           "Supported Group Order: create groups and share codes (deeplink) for multiple users to join and order together.",
           "Handled individual and group shopping carts.",
